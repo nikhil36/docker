@@ -1,9 +1,6 @@
 <h1>Docker commands</h1>
 <h3>Simple commands to get started with docker</h3>
-
-
-<br><br>
-***
+<br>
 <h4>1. Launching containers</h4>
 
 ***
@@ -38,8 +35,6 @@
 7. Provide container nickname <br>
 `docker run --name <name> <image>`
 <br>
-<br>
-***
 <h4>2. Accessing containers</h4>
 
 ***
@@ -58,13 +53,8 @@ e.g. `docker exec test_container ps-aux`
 3. Copying file from the container<br>
 `docker cp <container_name>:<path> <to_path>`
 <br>Example for copying nginx config from a container:<br>
-`docker cp nginx-container:/etc/nginx/conf.d/default.conf .`
+`docker cp default.config nginx-container:/etc/nginx/conf.d/default.conf .`
 <br>
-<br>Example for copying to a container:<br>
-`docker cp default.config nginx-container:/etc/nginx/conf.d/default.conf`
-<br><br>
-
-***
 <h4>3. Container management</h4>
 
 ***
@@ -145,4 +135,3 @@ e.g. `docker pull alpine`
 3. Push the image to Docker Hub.<br>
 `docker push <username>/<reponame>` <br>
 <br>
-
